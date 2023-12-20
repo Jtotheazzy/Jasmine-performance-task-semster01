@@ -20,7 +20,11 @@ func _process(delta):
 		velocity = velocity.normalized()*Speed
 	position += velocity * delta
 
-func _on_body_entered(body):
+
 	enemy_hit.play()
 	bgmusic.stop()
 	hide()
+
+
+func _on_body_entered(body):
+	pass # Replace with function body.
